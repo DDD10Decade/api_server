@@ -1,0 +1,16 @@
+import { Router } from 'express'
+// 创建路由对象
+const router = Router()
+
+// 注册新用户
+router.post('/reguser', (req, res) => {
+    res.send('reguser OK')
+})
+
+// 登录
+router.post('/login', (req, res) => {
+    res.send('login OK')
+})
+
+// 将路由对象共享出去
+export default router
