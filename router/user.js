@@ -1,6 +1,6 @@
-import { Router } from 'express'
+const express = require('express')
 // 创建路由对象
-const router = Router()
+const router = express.Router()
 
 // 注册新用户
 router.post('/reguser', (req, res) => {
@@ -13,4 +13,4 @@ router.post('/login', (req, res) => {
 })
 
 // 将路由对象共享出去
-export default router
+module.exports = router
